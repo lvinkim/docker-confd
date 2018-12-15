@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  confd:
+    image: lvinkim/confd:latest
+    build: .
+    volumes:
+      - ./config.toml:/etc/confd/conf.d/config.toml
+      - ./config.conf.tmpl:/etc/confd/templates/config.conf.tmpl
+    command:
+      - confd
+      - -watch
+      - -backend
+      - etcdv3
+      - -node
+      - http://192.168.1.112:2379

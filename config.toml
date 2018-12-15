@@ -1,0 +1,6 @@
+[template]
+src = "config.conf.tmpl"
+dest = "/tmp/config.conf"
+keys = [
+    "/app/reminder/dev",
+]

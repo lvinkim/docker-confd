@@ -1,0 +1,10 @@
+/*
+
+!.gitignore
+
+!confd-0.16.0-linux-amd64
+!config.conf.tmpl
+!config.toml
+!docker-compose.yml
+!Dockerfile
+!README.md
